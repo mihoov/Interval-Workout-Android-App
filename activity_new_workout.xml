@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_workout"
+        android:layout_gravity="center"
+        android:textSize="40sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/highIntervalTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:padding="4dp"
+            android:text="@string/highIntervalString" />
+
+        <EditText
+            android:id="@+id/editTextHighIntervalMinutes"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="Minutes"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            />
+
+        <EditText
+            android:id="@+id/editTextHighIntervalSeconds"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="Seconds"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lowIntervalTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:padding="4dp"
+            android:text="@string/lowIntervalString" />
+
+        <EditText
+            android:id="@+id/editLowHighIntervalMinutes"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="Minutes"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            />
+
+        <EditText
+            android:id="@+id/editTextLowIntervalSeconds"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="Seconds"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/numLoopsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:padding="4dp"
+            android:layout_weight="1"
+            android:text="@string/numLoopsString" />
+
+        <EditText
+            android:id="@+id/editTextLoops"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Workout"
+            android:layout_margin="4dp"
+            android:id="@+id/buttonStartWorkout"
+
+            />
+
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="Cancel" />
+    </LinearLayout>
+
+</LinearLayout>
